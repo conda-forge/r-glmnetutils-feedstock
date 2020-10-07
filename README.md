@@ -5,7 +5,7 @@ Home: https://github.com/Hong-Revo/glmnetUtils
 
 Package license: GPL-2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Provides a formula interface for the 'glmnet' package for elasticnet regression, a method for cross-validating the alpha parameter, and other quality-of-life tools.
 
