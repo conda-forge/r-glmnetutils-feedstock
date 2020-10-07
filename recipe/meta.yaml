@@ -1,4 +1,4 @@
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/glmnetUtils_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/glmnetUtils/glmnetUtils_{{ version }}.tar.gz
-  sha256: 50a0028d15325432c1e316bd462cbd0ce11b31063f6ae7e0db8fd115ed1d1061
+  sha256: 2c06d86396f442baee928aad4360f2d4eaaa7e10dc8badc6c12ec038d1dbc9aa
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,8 +40,7 @@ test:
 about:
   home: https://github.com/Hong-Revo/glmnetUtils
   license: GPL-2
-  summary: Provides a formula interface for the 'glmnet' package for elasticnet regression, a method for cross-validating the alpha parameter, and other quality-of-life
-    tools.
+  summary: Provides a formula interface for the 'glmnet' package for elasticnet regression, a method for cross-validating the alpha parameter, and other quality-of-life tools.
   license_family: GPL2
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
